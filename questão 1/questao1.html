@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina pessoal</title>
+    <style>
+        h1 {
+            color: #0fee77;
+            font-size: 200%;
+        }
+
+        h2 {
+            color: #0fee77;
+            font-size: 150%;
+        }
+
+        p {
+            font-size: 150%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .conteiner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 5px solid #0ecce5;
+            padding: 20px;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        img {
+            height: 250px;
+            border-radius: 70%;
+            border: 5px solid #00FF40;
+        }
+
+        body {
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231010/pngtree-serenely-scenic-laptop-computer-mockup-with-accessories-and-ample-copy-space-image_13595460.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+        }
+
+        button {
+            background-color: #0e76a8;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <img src="questao1.jpg" alt="minhafoto">
+        <h1>João Vítor Brasil</h1>
+        <table>
+            <tr>
+                <td>Matrícula:</td>
+                <td>2024 0268 1346</td>
+            </tr>
+        </table>
+        <h2>ADS - Análise e Desenvolvimento de Sistemas</h2>
+        <p>Eu chamo João Vítor da Costa Brasil, tenho 23 anos e sempre fui apaixonado por tecnologia. Atualmente, curso
+            Análise e Desenvolvimento de Sistemas na Estácio e, ao longo da minha trajetória, adquiri diversos
+            certificados em HTML, CSS e JavaScript através das plataformas Alura e Curso em Vídeo. <br>
+            Além disso, possuo certificação em Fluig pela TOTVS, uma linguagem na qual estou me especializando para
+            ingressar no mercado de trabalho. Tenho também experiência prática, adquirida durante 10 meses como
+            freelancer, desenvolvendo em Fluig.</p>
+
+        <button id="linkedinBtn">LinkedIn</button>
+    </div>
+    <script>
+        document.getElementById("linkedinBtn").onclick = function () {
+            window.open("https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-costa-brasil-95078424a/", "_blank");
+        };
+    </script>
+</body>
+</html>
